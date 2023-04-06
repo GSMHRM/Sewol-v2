@@ -21,7 +21,7 @@ a {
 .navBox{
     width: 20vw;
     height:36vh;
-    background-color: black;
+    background-color: gray;
     padding: 0;
     margin: 0;
     position: relative;
@@ -32,17 +32,36 @@ a {
     margin-bottom: 10%;
     overflow-x: hidden;
     overflow-y: auto;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .h1Box{
     position: sticky;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: darkkhaki;
     width: 20vw;
-    height: 5vh;
+    height: 6vh;
+    top: 0;
+    z-index: 999;
+    transform: translateY(0);
+
+}
+
+.quizH1Box{
+    position: sticky;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: darkkhaki;
+    width: 20vw;
+    height: 6vh;
     top: 0;
     z-index: 999;
     transform: translateY(0);
@@ -58,22 +77,36 @@ a {
     flex-direction: column;
     list-style: none;
     margin-left: 10%;
-    margin-top: 2%;
+    margin: 0;
+    padding: 0;
 }
 
 .navBar .navBox ul {
     display: flex;
     flex-direction: column;
     list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-.navBar .navBox ul li {
-    position: relative;
-    width: 80%;
+.navBar .navBox ul .Btn {
+    width: 20vw;
+    height: 6vh;
     font-weight: 600;
-    margin-top: 10%;
     color: white;
+    background: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.navBar .navBox ul .Btn:focus{
+    background-color: blue;
 }
 
 .active{
