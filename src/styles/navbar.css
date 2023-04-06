@@ -21,7 +21,6 @@ a {
 .navBox{
     width: 20vw;
     height:36vh;
-    overflow-y: auto;
     background-color: black;
     padding: 0;
     margin: 0;
@@ -31,20 +30,26 @@ a {
     top: 10%;
     border-radius: 10px;
     margin-bottom: 10%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
 }
 
 .h1Box{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: darkkhaki;
     width: 20vw;
     height: 5vh;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 0%;
+    top: 0;
+    z-index: 999;
+    transform: translateY(0);
 }
 
 
-.navBar h1{
+.navBar .navBox h1{
     width: 80%;
     font-size: 1rem;
     font-weight: 600;
@@ -56,13 +61,13 @@ a {
     margin-top: 2%;
 }
 
-.navBar ul {
+.navBar .navBox ul {
     display: flex;
     flex-direction: column;
     list-style: none;
 }
 
-.navBar ul li {
+.navBar .navBox ul li {
     position: relative;
     width: 80%;
     font-weight: 600;
