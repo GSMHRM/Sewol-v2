@@ -67,6 +67,8 @@ a {
     width: 80%;
     font-weight: 600;
     margin-top: 10%;
+    color: white;
+    cursor: pointer;
 }
 
 .active{

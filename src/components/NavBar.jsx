@@ -22,28 +22,28 @@ const NavBar = () => {
           <div className="h1Box">
             <h1>퀴즈 풀어보기</h1>
           </div>
-          <ArticleItem id={"문제 1"} link={"문제1"} />
-          <ArticleItem id={"문제 2"} link={"문제2"} />
-          <ArticleItem id={"문제 3"} link={"문제3"} />
-          <ArticleItem id={"문제 4"} link={"문제4"} />
-          <ArticleItem id={"문제 5"} link={"문제5"} />
-          <ArticleItem id={"문제 6"} link={"문제6"} />
-          <ArticleItem id={"문제 7"} link={"문제7"} />
-          <ArticleItem id={"문제 8"} link={"문제8"} />
-          <ArticleItem id={"문제 9"} link={"문제9"} />
-          <ArticleItem id={"문제 10"} link={"문제10"} />
+          <ArticleItem id={"문제 1"} />
+          <ArticleItem id={"문제 2"} />
+          <ArticleItem id={"문제 3"} />
+          <ArticleItem id={"문제 4"} />
+          <ArticleItem id={"문제 5"} />
+          <ArticleItem id={"문제 6"} />
+          <ArticleItem id={"문제 7"} />
+          <ArticleItem id={"문제 8"} />
+          <ArticleItem id={"문제 9"} />
+          <ArticleItem id={"문제 10"} />
         </ul>
       </div>
     </div>
   );
 };
 
-const ArticleItem = ({ id, link }) => {
+const ArticleItem = ({ id }) => {
   return (
     <div>
-      <NavLink to={link} className={({isActive})=>(isActive ? "active": undefined)}>
+      <div className={({ isActive }) => (isActive ? "active" : undefined)}>
         <li>{id}</li>
-      </NavLink>
+      </div>
     </div>
   );
 };
