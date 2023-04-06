@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.navBar {
+    width: 26vw;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: pink;
+    padding: 0;
+    margin: 0;
+}
+
+.navBox{
+    width: 20vw;
+    height:36vh;
+    overflow-y: auto;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 10%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.h1Box{
+    background-color: darkkhaki;
+    width: 20vw;
+    height: 5vh;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0%;
+}
+
+
+.navBar h1{
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navBar ul li {
+    position: relative;
+    width: 80%;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.active{
+    color: red;
+}
