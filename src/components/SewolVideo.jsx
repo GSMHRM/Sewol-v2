@@ -3,7 +3,7 @@ import React from 'react';
 const SewolVideo = () => {
     return (
         <div>
-            꼴리노
+            비디오
         </div>
     );
 };
