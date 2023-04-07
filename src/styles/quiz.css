@@ -1,0 +1,13 @@
+.quizBox{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 40%;
+}
+
+.quiz{
+    margin-top: 10%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
