@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navBar::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+.navBar::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #868f91; /* 스크롤바의 색상 */
+  
+}
+
+.navBar::-webkit-scrollbar-track {
+  background: rgba(62, 128, 220, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+
+.navBar {
+  width: 26vw;
+  height: 100vh;
+  overflow-y: auto;
+  background: lightyellow;
+  padding: 0;
+  margin: 0;
+}
+
+.navBox {
+  width: 20vw;
+  height: 36vh;
+  background: #f1f1f5;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 4%;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1Box {
+  position: sticky;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ffcc00;
+  width: 20vw;
+  height: 6vh;
+  z-index: 999;
+  top: 0%;
+  transform: translateY(0);
+}
+
+.navBar .navBox h1 {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 10%;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar .navBox ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar .navBox ul .Btn {
+  width: 20vw;
+  height: 6vh;
+  font-weight: 600;
+  color: #999999;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.navBar .navBox ul .Btn:focus {
+  background-color: #ffcc00;
+  border: none;
+  outline: none;
+  filter: opacity(80%);
+}
