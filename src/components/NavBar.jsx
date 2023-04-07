@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 import "../styles/navbar.css";
 import SewolVideo from "./video/SewolVideo";
 import SafeVideo1 from "./video/SafeVideo1";
