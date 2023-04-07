@@ -5,6 +5,7 @@ const SewolQuiz = () => {
   return (
     <div>
       <div className="quizBox">
+        <div className="quizInBox">
         <h1>문제</h1>
         <p className="quiz">
           정홍원 국무총리에 따르면 세월호 매뉴얼에는 이곳에 상황을 보고하도록
@@ -13,6 +14,7 @@ const SewolQuiz = () => {
         </p>
         o
         x
+      </div>
       </div>
     </div>
   );
