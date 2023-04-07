@@ -27,7 +27,7 @@ a {
     position: relative;
     transform: translateX(-50%);
     left: 50%;
-    top: 10%;
+    top: 4%;
     border-radius: 10px;
     margin-bottom: 10%;
     overflow-x: hidden;
@@ -47,26 +47,10 @@ a {
     background-color: darkkhaki;
     width: 20vw;
     height: 6vh;
-    top: 0;
     z-index: 999;
-    transform: translateY(0);
-
-}
-
-.quizH1Box{
-    position: sticky;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: darkkhaki;
-    width: 20vw;
-    height: 6vh;
-    top: 0;
-    z-index: 999;
+    top: 0%;
     transform: translateY(0);
 }
-
 
 .navBar .navBox h1{
     width: 80%;
