@@ -21,8 +21,7 @@ const SewolQuiz2 = () => {
           <div className="quizInBox">
             <h1>문제</h1>
             <p className="quiz">
-              특별법 제정을 위해 연예인을 비롯해 많은 국민이 동조단식을 하고
-              있다.<br/> 연예인 김제동씨도 23일 간 동조단식을 했다.
+              몰루몰룸몰루
             </p>
             <FiCircle className="circle" onClick={falseModal} />
             <FiX className="x" onClick={trueModal} />
@@ -32,7 +31,7 @@ const SewolQuiz2 = () => {
       {trueOpen && (
         <True
           text="정답입니다!"
-          commentary="김제동 -> 김장훈"
+          commentary="몰루 -> 몰루"
           setTrueOpen={setTrueOpen}
         />
       )}
