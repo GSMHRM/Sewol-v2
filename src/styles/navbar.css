@@ -14,7 +14,7 @@ a {
 
 .navBar::-webkit-scrollbar-thumb {
   height: 30%; /* 스크롤바의 길이 */
-  background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%); /* 스크롤바의 색상 */
+  background: #868f91; /* 스크롤바의 색상 */
   
 }
 
@@ -26,7 +26,7 @@ a {
   width: 26vw;
   height: 100vh;
   overflow-y: auto;
-  background: linear-gradient(90deg, #36d1dc 0%, #5b86e5 100%);
+  background: lightyellow;
   padding: 0;
   margin: 0;
 }
@@ -34,7 +34,7 @@ a {
 .navBox {
   width: 20vw;
   height: 36vh;
-  background: #dbdbdb;
+  background: #f1f1f5;
   padding: 0;
   margin: 0;
   position: relative;
@@ -57,7 +57,7 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: #66a6ff;
+  background: #ffcc00;
   width: 20vw;
   height: 6vh;
   z-index: 999;
@@ -92,7 +92,7 @@ a {
   width: 20vw;
   height: 6vh;
   font-weight: 600;
-  color: white;
+  color: #999999;
   background: none;
   cursor: pointer;
   display: flex;
@@ -103,7 +103,8 @@ a {
 }
 
 .navBar .navBox ul .Btn:focus {
-  background-color: #6f86d6;
+  background-color: #ffcc00;
   border: none;
   outline: none;
+  filter: opacity(80%);
 }
