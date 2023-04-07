@@ -10,10 +10,55 @@
   padding: 20px;
 }
 
+.quizBox h1 {
+  text-align: center;
+}
+
+.explain {
+  font-weight: 600;
+  margin-left: 80%;
+}
+
 .quiz {
   margin-top: 10%;
+  margin-left: 4%;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.quizlist {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.quizlist2 {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist p {
+  margin-top: 10%;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist2 p {
+  margin-top: 5%;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist p:hover {
+  color: #ffcc00;
+}
+
+.quizlist2 p:hover {
+  color: #ffcc00;
 }
 
 .circle {
@@ -39,4 +84,42 @@
   top: 57%;
   cursor: pointer;
   margin-left: 10%;
+}
+
+.modalBox {
+  position: absolute;
+  top: 25%;
+  left: 64%;
+  transform: translateX(-50%);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fad43a;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  top: 7%;
+}
+
+.commentary {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  top: 16%;
+}
+
+.closeModal {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 90%;
+  top: 4%;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
 }

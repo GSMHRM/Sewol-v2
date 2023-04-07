@@ -12,8 +12,10 @@ const Icons = ({ url }) => {
 
   return (
     <div>
-      <FcAbout className="icons" onClick={toggleModal} />
-      {modalopen && (<IconModal url={url} setModalOpen={setModalOpen} />)}
+      <div className="iconBox">
+        <FcAbout className="icons" onClick={toggleModal} />
+      </div>
+      {modalopen && <IconModal url={url} setModalOpen={setModalOpen} />}
     </div>
   );
 };

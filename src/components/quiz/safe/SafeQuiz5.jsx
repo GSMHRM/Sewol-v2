@@ -9,8 +9,7 @@ const SafeQuiz5 = () => {
           <div className="quizInBox">
             <h1>문제</h1>
             <p className="quiz">
-              선박사고(화재, 테러 등) 발생시 큰소리로 외치거나 비상벨을 눌러
-              사고발생 사실을 알린다.
+              배가 기울어질때 선장이나 선원의 안내로 방 안에 그대로 머물러있는다.
             </p>
             <FiCircle className="circle" />
             <FiX className="x" />
