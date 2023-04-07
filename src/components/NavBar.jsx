@@ -1,7 +1,20 @@
 import React, { useCallback, useState } from "react";
 import "../styles/navbar.css";
-import SewolVideo from "./SewolVideo";
-import SewolQuiz from "./quiz/sewol/SewolQuiz";
+import SewolVideo from "./video/SewolVideo";
+import SafeVideo1 from "./video/SafeVideo1";
+import SafeVideo2 from "./video/SafeVideo2";
+import Song1 from "./video/Song1";
+import Song2 from "./video/Song2";
+import SewolQuiz1 from "./quiz/sewol/SewolQuiz1";
+import SewolQuiz2 from "./quiz/sewol/SewolQuiz2";
+import SewolQuiz3 from "./quiz/sewol/SewolQuiz3";
+import SewolQuiz4 from "./quiz/sewol/SewolQuiz4";
+import SewolQuiz5 from "./quiz/sewol/SewolQuiz5";
+import SafeQuiz1 from "./quiz/safe/SafeQuiz1";
+import SafeQuiz2 from "./quiz/safe/SafeQuiz2";
+import SafeQuiz3 from "./quiz/safe/SafeQuiz3";
+import SafeQuiz4 from "./quiz/safe/SafeQuiz4";
+import SafeQuiz5 from "./quiz/safe/SafeQuiz5";
 
 const NavBar = () => {
   const sewolList = [
@@ -60,26 +73,26 @@ const NavBar = () => {
 
   const selectSewol = {
     first: <SewolVideo />,
-    second: <SewolVideo />,
-    third: <SewolVideo />,
-    fourth: <SewolVideo />,
-    fifth: <SewolVideo />,
+    second: <SafeVideo1 />,
+    third: <SafeVideo2 />,
+    fourth: <Song1 />,
+    fifth: <Song2 />,
   };
 
   const selectQuiz1 = {
-    one: <SewolQuiz />,
-    two: <SewolQuiz />,
-    three: <SewolQuiz />,
-    four: <SewolQuiz />,
-    five: <SewolQuiz />,
+    one: <SewolQuiz1 />,
+    two: <SewolQuiz2 />,
+    three: <SewolQuiz3 />,
+    four: <SewolQuiz4 />,
+    five: <SewolQuiz5 />,
   };
 
   const selectQuiz2 = {
-    one: <SewolQuiz />,
-    two: <SewolQuiz />,
-    three: <SewolQuiz />,
-    four: <SewolQuiz />,
-    five: <SewolQuiz />,
+    one: <SafeQuiz1 />,
+    two: <SafeQuiz2 />,
+    three: <SafeQuiz3 />,
+    four: <SafeQuiz4 />,
+    five: <SafeQuiz5 />,
   };
 
   return (

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const SewolVideo = () => {
+const SewolQuiz4 = () => {
     return (
         <div>
-            비디오
+            4
         </div>
     );
 };
 
-export default SewolVideo;
+export default SewolQuiz4;
