@@ -1,8 +1,10 @@
 import React from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 import Icons from "./icons/Icon";
 
 const SewolVideo = () => {
-    const URL = `https://www.youtube.com/embed/ALvTNrE_LbU`;
+  const URL = `https://www.youtube.com/embed/ALvTNrE_LbU`;
   return (
     <div>
       <Icons url={URL}/>
@@ -12,7 +14,7 @@ const SewolVideo = () => {
         height="515"
         src={URL}
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
       ></iframe>
     </div>

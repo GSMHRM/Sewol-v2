@@ -15,6 +15,8 @@ import SafeQuiz2 from "./quiz/safe/SafeQuiz2";
 import SafeQuiz3 from "./quiz/safe/SafeQuiz3";
 import SafeQuiz4 from "./quiz/safe/SafeQuiz4";
 import SafeQuiz5 from "./quiz/safe/SafeQuiz5";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 const NavBar = () => {
   const sewolList = [
@@ -47,6 +49,8 @@ const NavBar = () => {
 
   const [contentSafeQuiz, setContentSafeQuiz] = useState();
 
+  const btnRef = useRef(null);
+
   const handleClickButtonSewol = (e) => {
     const { name } = e.target;
     setContentSewol(name);
@@ -70,6 +74,8 @@ const NavBar = () => {
     setContentSewolQuiz(false);
     console.log(name);
   };
+
+
 
   const selectSewol = {
     first: <SewolVideo />,
@@ -95,6 +101,10 @@ const NavBar = () => {
     five: <SafeQuiz5 />,
   };
 
+  useEffect(() => {
+    setContentSewol("first");    
+  }, []);
+
   return (
     <div className="navBar">
       <div className="navBox">
@@ -108,6 +118,7 @@ const NavBar = () => {
               onClick={handleClickButtonSewol}
               name={data.name}
               key={data.id}
+              ref={btnRef}
             >
               {data.title}
             </button>

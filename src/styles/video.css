@@ -4,6 +4,7 @@
     top: 14%;
     transform: translateX(-50%);
     left: 64%;
+    z-index: -1;
 }
 
 .icons{
