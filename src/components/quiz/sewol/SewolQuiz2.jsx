@@ -8,7 +8,7 @@ const SewolQuiz2 = () => {
           <div className="quizInBox">
           <h1>문제</h1>
           <p className="quiz">
-            세월호 특별법 가족국민입법발의안은 총 49조로 되어 있다.
+            세월호 특별법 가족국민입법발의안은 총 49조로 되어 있다(O, X).
           </p>
           o x
         </div>

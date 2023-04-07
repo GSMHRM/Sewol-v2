@@ -4,6 +4,7 @@ import Icons from "./icons/Icon";
 
 const SafeVideo1 = () => {
   const URL = `https://www.youtube.com/embed/vvNq2sUZj0g`;
+  
   return (
     <div>
       <Icons url={URL} />
