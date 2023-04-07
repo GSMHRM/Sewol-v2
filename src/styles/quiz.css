@@ -1,17 +1,42 @@
-.quizBox{
-    position: absolute;
-    top: 10%;
-    left: 64%;
-    transform: translateX(-50%);
-    width: 54vw;
-    height: 70vh;
-    border: 16px solid #ffcc00;
-    border-radius: 20px;
-    padding: 20px;
+.quizBox {
+  position: absolute;
+  top: 10%;
+  left: 64%;
+  transform: translateX(-50%);
+  width: 54vw;
+  height: 70vh;
+  border: 16px solid #ffcc00;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.quiz{
-    margin-top: 10%;
-    font-size: 1.2rem;
-    font-weight: 600;
+.quiz {
+  margin-top: 10%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.circle {
+  font-size: 9rem;
+  display: flex;
+  color: blue;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 30%;
+  top: 60%;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+.x {
+  font-size: 11rem;
+  color: red;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 60%;
+  top: 57%;
+  cursor: pointer;
+  margin-left: 10%;
 }
