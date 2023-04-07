@@ -1,0 +1,17 @@
+.quizBox{
+    position: absolute;
+    top: 10%;
+    left: 64%;
+    transform: translateX(-50%);
+    width: 54vw;
+    height: 70vh;
+    border: 16px solid #ffcc00;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.quiz{
+    margin-top: 10%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

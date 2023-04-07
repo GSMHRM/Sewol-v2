@@ -1,0 +1,18 @@
+.video{
+    position: absolute;
+    display: flex;
+    top: 14%;
+    transform: translateX(-50%);
+    left: 64%;
+    z-index: -1;
+}
+
+.icons{
+    position: absolute;
+    display: flex;
+    font-size: 3rem;
+    top: 6%;
+    transform: translateX(-50%);
+    left: 34%;
+    cursor: pointer;
+}
