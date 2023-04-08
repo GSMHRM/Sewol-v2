@@ -26,8 +26,8 @@ const SewolQuiz3 = () => {
           </p>
         </div>
       </div>
-      {trueOpen && <True text="정답입니다!" commentary="정부는 세월호 침몰 신고가 접수된 가장 빠른 시간이 8시52분이라고 공식적으로 밝혔다. " setTrueOpen={setTrueOpen}/>}
-      {falseOpen && <False text="오답입니다!" commentary="다시 풀어보세요" setFalseOpen={setFalseOpen}/>}
+      {trueOpen && <True text="정답입니다!" commentary="정부는 세월호 침몰 신고가 접수된 가장 빠른 시간이 8시52분이라고 공식적으로 밝혔다." setTrueOpen={setTrueOpen}/>}
+      {falseOpen && <False text="오답입니다!" again='다시 풀어보세요' commentary="정부는 세월호 침몰 신고가 접수된 가장 빠른 시간이 8시52분이라고 공식적으로 밝혔다." setFalseOpen={setFalseOpen}/>}
     </div>
   );
 };

@@ -33,14 +33,15 @@ const SewolQuiz5 = () => {
       {trueOpen && (
         <True
           text="정답입니다!"
-          commentary="정부는 해상안전법을 개정하였다. "
+          commentary="정부는 해상안전법을 개정하였다."
           setTrueOpen={setTrueOpen}
         />
       )}
       {falseOpen && (
         <False
           text="오답입니다!"
-          commentary="다시 풀어보세요"
+          again='다시 풀어보세요'
+          commentary="정부는 해상안전법을 개정하였다."
           setFalseOpen={setFalseOpen}
         />
       )}

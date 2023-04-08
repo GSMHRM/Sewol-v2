@@ -95,7 +95,8 @@
   height: 44vh;
   border-radius: 20px;
   padding: 20px;
-  background: #fad43a;
+  border: 10px solid #ffcc00;
+  background: #fff;
 }
 
 .text {
@@ -103,15 +104,44 @@
   font-size: 1.8rem;
   font-weight: 600;
   position: relative;
-  top: 7%;
+  top: 2%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.commentary {
+.again{
+  position: absolute;
+  font-size: 0.8rem;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18%;
+}
+
+.commentaryOpen {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
-  position: relative;
-  top: 16%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+}
+
+.commentary{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .closeModal {

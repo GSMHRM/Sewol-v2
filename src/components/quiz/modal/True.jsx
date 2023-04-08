@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FiX } from "react-icons/fi";
 import "../../../styles/quiz.css";
 
@@ -29,11 +29,20 @@ const True = ({ text, commentary, setTrueOpen }) => {
     };
   }, [setTrueOpen]);
 
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div ref={modalRef} className="modalBox">
-      <p className="text">{text}</p>
-      <p className="commentary">해설<br/> {commentary}</p>
-      <FiX className="closeModal" onClick={trueModal} />
+      <div className="modalBoxInner">
+        <p className="text">{text}</p>
+        <button className="commentaryOpen" onClick={handleClick}>해설보기</button>
+        <FiX className="closeModal" onClick={trueModal} />
+      </div>
+      {isOpen && (<div className="commentary">{commentary}</div>)}
     </div>
   );
 };

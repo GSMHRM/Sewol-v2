@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiX } from "react-icons/fi";
 import { useEffect, useRef } from "react";
 import "../../../styles/quiz.css";
 
-const False = ({ text, commentary, setFalseOpen }) => {
+const False = ({ text, commentary, setFalseOpen, again }) => {
   const falseModal = () => {
     setFalseOpen(false);
   };
@@ -30,13 +30,22 @@ const False = ({ text, commentary, setFalseOpen }) => {
     };
   }, [setFalseOpen]);
 
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  }
+
+
   return (
     <div ref={modalRef} className="modalBox">
       <p className="text">{text}</p>
-      <p className="commentary">{commentary}</p>
+      <p className="again">({again})</p>
+      <button className="commentaryOpen" onClick={handleClick}>해설보기</button>
       <span className="closeModal" onClick={falseModal}>
         <FiX />
       </span>
+      {isOpen && (<div className="commentary">{commentary}</div>)}
     </div>
   );
 };

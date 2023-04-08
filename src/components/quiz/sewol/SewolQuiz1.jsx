@@ -30,7 +30,7 @@ const SewolQuiz = () => {
         </div>
       </div>
       {trueOpen && <True text="정답입니다!" commentary="청와대 -> 국정원" setTrueOpen={setTrueOpen}/>}
-      {falseOpen && <False text="오답입니다!" commentary="다시 풀어보세요" setFalseOpen={setFalseOpen}/>}
+      {falseOpen && <False text="오답입니다!" again='다시 풀어보세요' commentary="청와대 -> 국정원" setFalseOpen={setFalseOpen}/>}
     </div>
   );
 };
