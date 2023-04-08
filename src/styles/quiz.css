@@ -1,17 +1,180 @@
-.quizBox{
-    position: absolute;
-    top: 10%;
-    left: 64%;
-    transform: translateX(-50%);
-    width: 54vw;
-    height: 70vh;
-    border: 16px solid #ffcc00;
-    border-radius: 20px;
-    padding: 20px;
+.quizBox {
+  position: absolute;
+  top: 10%;
+  left: 64%;
+  transform: translateX(-50%);
+  width: 54vw;
+  height: 70vh;
+  border: 16px solid #ffcc00;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.quiz{
-    margin-top: 10%;
-    font-size: 1.2rem;
-    font-weight: 600;
+.quizBox h1 {
+  text-align: center;
+}
+
+.explain {
+  font-weight: 600;
+  margin-left: 80%;
+}
+
+.quiz {
+  margin-top: 10%;
+  margin-left: 4%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.quizg {
+  margin-top:2%;
+  margin-left: 4%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.quizlist {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.quizlist2 {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist3 {
+  margin-top: 6%;
+  margin-left: 6%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist p {
+  margin-top: 10%;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist2 p {
+  margin-top: 5%;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist3 p {
+  margin-top: 5%;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist p:hover {
+  color: #ffcc00;
+}
+
+.quizlist2 p:hover {
+  color: #ffcc00;
+}
+
+.quizlist3 p:hover {
+  color: #ffcc00;
+}
+
+.circle {
+  font-size: 9rem;
+  display: flex;
+  color: blue;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 30%;
+  top: 60%;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+.x {
+  font-size: 11rem;
+  color: red;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 60%;
+  top: 57%;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+.modalBox {
+  position: absolute;
+  top: 25%;
+  left: 64%;
+  transform: translateX(-50%);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 20px;
+  padding: 20px;
+  border: 10px solid #ffcc00;
+  background: #fff;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  top: 2%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.again{
+  position: absolute;
+  font-size: 0.8rem;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18%;
+}
+
+.commentaryOpen {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+}
+
+.commentary{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.closeModal {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 90%;
+  top: 4%;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
 }
