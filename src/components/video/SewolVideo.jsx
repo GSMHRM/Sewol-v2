@@ -1,6 +1,5 @@
 import React from "react";
 import Icons from "./icons/Icon";
-import ReactPlayer from "react-player/youtube";
 
 const SewolVideo = () => {
   const URL = "https://www.youtube.com/embed/ALvTNrE_LbU";
