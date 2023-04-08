@@ -26,13 +26,13 @@ const SafeQuiz1 = () => {
               <br /> 개조해 사용하고 있다. 현재 완화된 규제에 따라 선박연령은
               30년이다.
             </p>
-            <FiCircle className="circle" onClick={}/>
-            <FiX className="x" />
+            <FiCircle className="circle" onClick={trueModal}/>
+            <FiX className="x" onClick={falseModal}/>
           </div>
         </div>
       </div>
-      {trueOpen && <True text="정답입니다!" commentary="청와대 -> 국정원" setTrueOpen={setTrueOpen}/>}
-      {falseOpen && <False text="오답입니다!" again='다시 풀어보세요' commentary="청와대 -> 국정원" setFalseOpen={setFalseOpen}/>}
+      {trueOpen && <True text="정답입니다!" commentary="이명박 정부는 선박업계의 요구에 따라 선박연령을 20년에서 30년으로 완화했다." setTrueOpen={setTrueOpen}/>}
+      {falseOpen && <False text="오답입니다!" again='다시 풀어보세요' commentary="이명박 정부는 선박업계의 요구에 따라 선박연령을 20년에서 30년으로 완화했다." setFalseOpen={setFalseOpen}/>}
     </div>
   );
 };

@@ -26,6 +26,13 @@
   font-weight: 600;
 }
 
+.quizg {
+  margin-top:2%;
+  margin-left: 4%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 .quizlist {
   margin-top: 10%;
   margin-left: 10%;
@@ -43,6 +50,15 @@
   transition: all 0.3s ease-out;
 }
 
+.quizlist3 {
+  margin-top: 6%;
+  margin-left: 6%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
 .quizlist p {
   margin-top: 10%;
   transition: all 0.3s ease-out;
@@ -53,11 +69,20 @@
   transition: all 0.3s ease-out;
 }
 
+.quizlist3 p {
+  margin-top: 5%;
+  transition: all 0.3s ease-out;
+}
+
 .quizlist p:hover {
   color: #ffcc00;
 }
 
 .quizlist2 p:hover {
+  color: #ffcc00;
+}
+
+.quizlist3 p:hover {
   color: #ffcc00;
 }
 
