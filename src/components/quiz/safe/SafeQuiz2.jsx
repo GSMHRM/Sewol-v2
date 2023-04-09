@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import True from "../modal/True";
 import False from "../modal/False";
 import SafeQuiz3 from "./SafeQuiz3";
+import SafeQuiz1 from "./SafeQuiz1"
 
 const SafeQuiz2 = () => {
   const [trueOpen, setTrueOpen] = useState(false);
@@ -15,14 +16,19 @@ const SafeQuiz2 = () => {
     setFalseOpen(true);
   };
 
+  const [showQuiz, setShowQuiz] = useState(true);
   const [showQuiz2, setShowQuiz2] = useState(true);
 
   const handleClick = () => {
+    setShowQuiz(false);
+  };
+
+  const handleClick2 = () => {
     setShowQuiz2(false);
   };
   return (
     <div>
-      {showQuiz2 ? (
+      {showQuiz ? showQuiz2 ? (
         <div>
           <div className="quizBox">
             <div className="quizInBox">
@@ -41,6 +47,9 @@ const SafeQuiz2 = () => {
             </div>
             <button className="nextQuiz" onClick={handleClick}>
               다음 문제 {">"}
+            </button>
+            <button className="beforeQuiz" onClick={handleClick2}>
+              {"<"} 이전 문제
             </button>
           </div>
           {trueOpen && (
@@ -64,8 +73,8 @@ const SafeQuiz2 = () => {
           )}
         </div>
       ) : (
-        <SafeQuiz3 />
-      )}
+        <SafeQuiz1 />
+      ) : <SafeQuiz3 />}
     </div>
   );
 };
