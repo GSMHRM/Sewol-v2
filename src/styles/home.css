@@ -9,6 +9,12 @@ a {
 
 .showVideo{
   color: black;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+}
+
+.showVideo:hover{
+  color: #ffcc00;
 }
 
 .linkBox{
@@ -17,10 +23,11 @@ a {
   border-radius: 10px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
   padding: 15px;
-  width: 20vw;
+  width: 16vw;
   height: 2vh;
   top: 6%;
   left: 36%;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
