@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiCircle, FiX } from "react-icons/fi";
 import True from "../modal/True";
 import False from "../modal/False";
+import SewolQuiz3 from "./SewolQuiz3";
 
 const SewolQuiz2 = () => {
   const [trueOpen, setTrueOpen] = useState(false);
@@ -14,34 +15,45 @@ const SewolQuiz2 = () => {
   const falseModal = () => {
     setFalseOpen(true);
   };
+
+  const [showQuiz2, setShowQuiz2] = useState(true);
+
+  const handleClick = () => {
+    setShowQuiz2(false);
+  };
   return (
     <div>
-      <div>
-        <div className="quizBox">
-          <div className="quizInBox">
-            <h1>문제</h1>
-            <p className="quiz">
-              세월호의 희생자 수는 299명이다.
-            </p>
-            <FiCircle className="circle" onClick={falseModal} />
-            <FiX className="x" onClick={trueModal} />
+      {showQuiz2 ? (
+        <div>
+          <div className="quizBox">
+            <div className="quizInBox">
+              <h1>문제2</h1>
+              <p className="quiz">세월호의 희생자 수는 299명이다.</p>
+              <FiCircle className="circle" onClick={falseModal} />
+              <FiX className="x" onClick={trueModal} />
+            </div>
+            <button className="nextQuiz" onClick={handleClick}>
+              다음 문제 {">"}
+            </button>
           </div>
+          {trueOpen && (
+            <True
+              text="정답입니다!"
+              commentary="시신 미수습자 5명을 포함한 304명이 사망하였다."
+              setTrueOpen={setTrueOpen}
+            />
+          )}
+          {falseOpen && (
+            <False
+              text="오답입니다!"
+              again="다시 풀어보세요"
+              commentary="시신 미수습자 5명을 포함한 304명이 사망하였다."
+              setFalseOpen={setFalseOpen}
+            />
+          )}
         </div>
-      </div>
-      {trueOpen && (
-        <True
-          text="정답입니다!"
-          commentary="시신 미수습자 5명을 포함한 304명이 사망하였다."
-          setTrueOpen={setTrueOpen}
-        />
-      )}
-      {falseOpen && (
-        <False
-          text="오답입니다!"
-          again='다시 풀어보세요'
-          commentary="시신 미수습자 5명을 포함한 304명이 사망하였다."
-          setFalseOpen={setFalseOpen}
-        />
+      ) : (
+        <SewolQuiz3 />
       )}
     </div>
   );

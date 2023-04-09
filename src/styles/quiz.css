@@ -16,8 +16,9 @@
 
 .explain {
   font-weight: 600;
-  margin-left: 80%;
-  margin-top: 10%;
+  margin: 0;
+  position: absolute;
+  left: 80%;
 }
 
 .quiz {
@@ -26,6 +27,14 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.quiz1{
+  top: 20%;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -54,7 +63,7 @@
 }
 
 .quizlist3 {
-  margin-top: 6%;
+  margin-top: 12%;
   margin-left: 6%;
   font-size: 1.2rem;
   font-weight: 600;
@@ -63,7 +72,7 @@
 }
 
 .quizlist p {
-  margin-top: 10%;
+  margin-top: 8%;
   transition: all 0.3s ease-out;
 }
 
@@ -73,7 +82,7 @@
 }
 
 .quizlist3 p {
-  margin-top: 5%;
+  margin-top: 6%;
   transition: all 0.3s ease-out;
 }
 
@@ -90,8 +99,18 @@
 }
 
 .quizlist4 {
-  margin-top: 4%;
+  margin-top: 16%;
   margin-left: 6%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist10{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 6%;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -106,6 +125,20 @@
 
 .quizlist4 p:hover {
   color: #ffcc00;
+}
+
+.quizlist10 p{
+  transition: all 0.3s ease-out;
+}
+
+.quizlist10 p:hover {
+  color: #ffcc00;
+}
+
+.quizContent{
+  width: 100%;
+  font-weight: 600;
+  margin-top: 10%;
 }
 
 .circle {
@@ -131,6 +164,19 @@
   top: 57%;
   cursor: pointer;
   margin-left: 10%;
+}
+
+.nextQuiz{
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 90%;
+  left: 84%;
 }
 
 .modalBox {
@@ -171,7 +217,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   position: absolute;
-  top: 40%;
+  top: 32%;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
@@ -186,9 +232,10 @@
   font-size: 1rem;
   font-weight: 600;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .closeModal {
