@@ -15,7 +15,6 @@ a {
 .navBar::-webkit-scrollbar-thumb {
   height: 30%; /* 스크롤바의 길이 */
   background: #868f91; /* 스크롤바의 색상 */
-  
 }
 
 .navBar::-webkit-scrollbar-track {
@@ -59,13 +58,48 @@ a {
   align-items: center;
   background: #ffcc00;
   width: 20vw;
-  height: 6vh;
+  height: 10vh;
   z-index: 999;
   top: 0%;
   transform: translateY(0);
 }
+.h1Box1 {
+  border-radius: 10px;
+  margin-bottom: 10%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 10%;
+  padding: 0;
+  background: #ffcc00;
+  width: 20vw;
+  height: 6vh;
+  z-index: 999;
+}
+.h1Box2 {
+  border-radius: 10px;
+  margin-bottom: 10%;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 20%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ffcc00;
+  width: 20vw;
+  height: 6vh;
+  z-index: 999;
+}
 
-.navBar .navBox h1 {
+.h1Box h1 {
   width: 80%;
   font-size: 1rem;
   font-weight: 600;
@@ -76,6 +110,24 @@ a {
   margin-left: 10%;
   margin: 0;
   padding: 0;
+}
+
+.h1 {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 10%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
 .navBar .navBox ul {

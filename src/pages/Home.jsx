@@ -75,8 +75,6 @@ const Home = () => {
     console.log(name);
   };
 
-
-
   const selectSewol = {
     first: <SewolVideo />,
     second: <SafeVideo1 />,
@@ -102,7 +100,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    setContentSewol("first");    
+    setContentSewol("first");
   }, []);
 
   return (
@@ -125,39 +123,11 @@ const Home = () => {
           ))}
         </ul>
       </div>
-      <div className="navBox">
-        <div className="h1Box">
-          <h1>세월호 관련 퀴즈 풀어보기</h1>
-        </div>
-        <ul>
-          {sewolQuizList.map((data) => (
-            <button
-              className="Btn"
-              onClick={handleClickButtonSewolQuiz}
-              name={data.name}
-              key={data.id}
-            >
-              {data.title}
-            </button>
-          ))}
-        </ul>
+      <div className="h1Box1">
+        <button className="h1">세월호 관련 퀴즈 풀어보기</button>
       </div>
-      <div className="navBox">
-        <div className="h1Box">
-          <h1>안전 관련 퀴즈 풀어보기</h1>
-        </div>
-        <ul>
-          {sewolSafeList.map((data) => (
-            <button
-              className="Btn"
-              onClick={handleClickButtonSafeQuiz}
-              name={data.name}
-              key={data.id}
-            >
-              {data.title}
-            </button>
-          ))}
-        </ul>
+      <div className="h1Box2">
+        <button className="h1">안전 관련 퀴즈 풀어보기</button>
       </div>
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
