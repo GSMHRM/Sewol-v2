@@ -123,12 +123,9 @@ const Home = () => {
           ))}
         </ul>
       </div>
-      <div className="h1Box1">
-        <button className="h1">세월호 관련 퀴즈 풀어보기</button>
-      </div>
-      <div className="h1Box2">
-        <button className="h1">안전 관련 퀴즈 풀어보기</button>
-      </div>
+      <button className="sewolQuiz" onClick={handleClickButtonSewolQuiz} name="four" ref={btnRef} >세월호 관련 퀴즈 풀어보기</button>
+      <button className="safeQuiz" onClick={handleClickButtonSafeQuiz} name="one" ref={btnRef}>안전 관련 퀴즈 풀어보기</button>
+
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
       {contentSafeQuiz && <div>{selectQuiz2[contentSafeQuiz]}</div>}

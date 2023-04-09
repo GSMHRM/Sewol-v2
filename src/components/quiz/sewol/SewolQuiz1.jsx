@@ -27,6 +27,7 @@ const SewolQuiz = () => {
           </p>
           <FiCircle className="circle" onClick={falseModal} />
           <FiX className="x" onClick={trueModal} />
+          <button>다음 문제 ={'>'}</button>
         </div>
       </div>
       {trueOpen && <True text="정답입니다!" commentary="청와대 -> 국정원" setTrueOpen={setTrueOpen}/>}

@@ -19,11 +19,12 @@ const SewolQuiz4 = () => {
       <div>
         <div className="quizBox">
           <div className="quizInBox">
-            <h1>세월호의 인양일은 언제인가요?</h1>
+            <h1>문제 4</h1>
+            <div className="quiz">세월호의 인양일은 언제인가요?</div>
             <p className="explain">(답을 선택해주세요)</p>
-            <p className="quizlist">
-              <p onClick={falseModal}>1. 2017년 3월 15일</p>
-              <p onClick={falseModal}>2. 2017년 3월 18일</p>
+            <p className="quizlist4">
+              <p onClick={falseModal}>1. 2015년 3월 23일</p>
+              <p onClick={falseModal}>2. 2016년 3월 23일</p>
               <p onClick={trueModal}>3, 2017년 3월 23일</p>
             </p>
           </div>

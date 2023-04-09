@@ -17,12 +17,15 @@
 .explain {
   font-weight: 600;
   margin-left: 80%;
+  margin-top: 10%;
 }
 
 .quiz {
-  margin-top: 10%;
-  margin-left: 4%;
-  font-size: 1.2rem;
+  top: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -74,7 +77,7 @@
   transition: all 0.3s ease-out;
 }
 
-.quizlist p:hover {
+.quizlist p:hover {   
   color: #ffcc00;
 }
 
@@ -83,6 +86,25 @@
 }
 
 .quizlist3 p:hover {
+  color: #ffcc00;
+}
+
+.quizlist4 {
+  margin-top: 4%;
+  margin-left: 6%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.quizlist4 p {
+  margin-top: 8%;
+  transition: all 0.3s ease-out;
+}
+
+
+.quizlist4 p:hover {
   color: #ffcc00;
 }
 
