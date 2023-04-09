@@ -197,6 +197,19 @@
   left: 84%;
 }
 
+.beforeQuiz {
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 90%;
+  right: 84%;
+}
+
 .modalBox {
   position: absolute;
   top: 25%;

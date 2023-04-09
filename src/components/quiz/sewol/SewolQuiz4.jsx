@@ -3,6 +3,7 @@ import "../../../styles/quiz.css";
 import True from "../modal/True";
 import False from "../modal/False";
 import SewolQuiz5 from "./SewolQuiz5";
+import SewolQuiz3 from "./SewolQuiz3";
 
 const SewolQuiz4 = () => {
   const [trueOpen, setTrueOpen] = useState(false);
@@ -16,15 +17,20 @@ const SewolQuiz4 = () => {
     setFalseOpen(true);
   };
 
+  const [showQuiz, setShowQuiz] = useState(true);
   const [showQuiz2, setShowQuiz2] = useState(true);
 
   const handleClick = () => {
+    setShowQuiz(false);
+  };
+
+  const handleClick2 = () => {
     setShowQuiz2(false);
   };
 
   return (
     <div>
-      {showQuiz2 ? (
+      {showQuiz ? showQuiz2 ? (
         <div>
           <div className="quizBox">
             <div className="quizInBox">
@@ -39,6 +45,9 @@ const SewolQuiz4 = () => {
             </div>
             <button className="nextQuiz" onClick={handleClick}>
               다음 문제 {">"}
+            </button>
+            <button className="beforeQuiz" onClick={handleClick2}>
+              {"<"} 이전 문제
             </button>
           </div>
           {trueOpen && (
@@ -58,8 +67,8 @@ const SewolQuiz4 = () => {
           )}
         </div>
       ) : (
-        <SewolQuiz5 />
-      )}
+        <SewolQuiz3 />
+      ) : <SewolQuiz5 />}
     </div>
   );
 };

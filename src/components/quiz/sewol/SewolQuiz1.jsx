@@ -17,15 +17,15 @@ const SewolQuiz = () => {
     setFalseOpen(true);
   };
 
-  const [showQuiz2, setShowQuiz2] = useState(true);
+  const [showQuiz, setShowQuiz] = useState(true);
 
   const handleClick = () => {
-    setShowQuiz2(false);
+    setShowQuiz(false);
   };
-
+  
   return (
     <div>
-      {showQuiz2 ? (
+      {showQuiz ? (
         <div>
           <div className="quizBox">
             <div className="quizInBox">
