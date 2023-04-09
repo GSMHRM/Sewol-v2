@@ -56,8 +56,8 @@ const SewolQuiz5 = () => {
           setFalseOpen={setFalseOpen}
         />
       )}
+      </div>
       ) : (<SewolQuiz4 />)}
-        </div>
     </div>
   );
 };
