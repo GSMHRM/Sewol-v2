@@ -31,7 +31,7 @@ const SewolQuiz = () => {
             <div className="quizInBox">
               <h1>문제1</h1>
               <p className="quiz1">
-                다음은 세월호 참사를 다른 영화 내용이다. 영화의 제목은
+                다음은 세월호 참사를 다룬 영화 내용이다. 영화의 제목은
                 무엇일까요?
               </p>
               <p className="explain">(답을 선택해주세요)</p>

@@ -5,8 +5,40 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
 }
+
+.showVideo{
+  color: black;
+}
+
+.linkBox{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  width: 20vw;
+  height: 2vh;
+  top: 6%;
+  left: 36%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 0.2s ease forwards; /* 애니메이션 추가 */
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 .navBar::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */

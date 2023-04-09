@@ -34,7 +34,7 @@ const SewolQuiz5 = () => {
       {trueOpen && (
         <True
           text="정답입니다!"
-          commentary="정부는 해상안전법을 개정하였다."
+          commentary="정부는 세월호 참사 이후 해상안전법을 개정하였다."
           setTrueOpen={setTrueOpen}
         />
       )}
@@ -42,7 +42,7 @@ const SewolQuiz5 = () => {
         <False
           text="오답입니다!"
           again='다시 풀어보세요'
-          commentary="정부는 해상안전법을 개정하였다."
+          commentary="정부는 세월호 참사 이후 해상안전법을 개정하였다."
           setFalseOpen={setFalseOpen}
         />
       )}

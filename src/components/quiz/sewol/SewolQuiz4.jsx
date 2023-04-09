@@ -44,7 +44,7 @@ const SewolQuiz4 = () => {
           {trueOpen && (
             <True
               text="정답입니다!"
-              commentary="3월23일 세월호는 1073일 만에 인양되었다."
+              commentary="2017년 3월23일 세월호는 1073일 만에 인양되었다."
               setTrueOpen={setTrueOpen}
             />
           )}
@@ -52,7 +52,7 @@ const SewolQuiz4 = () => {
             <False
               text="오답입니다!"
               again="다시 풀어보세요"
-              commentary="3월23일 세월호는 1073일 만에 인양되었다."
+              commentary="2017년 3월23일 세월호는 1073일 만에 인양되었다."
               setFalseOpen={setFalseOpen}
             />
           )}
