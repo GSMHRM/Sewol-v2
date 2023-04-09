@@ -6,11 +6,10 @@ const IconModal = ({ url, setModalOpen }) => {
     setModalOpen(false);
   }
 
-  const modalRef = useRef(null);
   return (
     <>
       <div>
-        {url}
+        <a href={url} target="_blank">영상 보러가기</a>
       </div>
     </>
   );

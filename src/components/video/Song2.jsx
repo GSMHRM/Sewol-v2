@@ -2,7 +2,7 @@ import React from "react";
 import Icons from "./icons/Icon";
 
 const Song2 = () => {
-  const URL = `https://www.youtube.com/embed/-iEv-rxGrzs`;
+  const URL = `https://www.youtube.com/watch?v=-iEv-rxGrzs`;
   return (
     <div>
       <Icons url={URL} />
@@ -10,7 +10,7 @@ const Song2 = () => {
         className="video"
         width="960"
         height="515"
-        src={URL}
+        src="https://www.youtube.com/embed/-iEv-rxGrzs"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"

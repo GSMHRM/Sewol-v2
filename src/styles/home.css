@@ -15,7 +15,6 @@ a {
 .navBar::-webkit-scrollbar-thumb {
   height: 30%; /* 스크롤바의 길이 */
   background: #868f91; /* 스크롤바의 색상 */
-  
 }
 
 .navBar::-webkit-scrollbar-track {
@@ -59,13 +58,13 @@ a {
   align-items: center;
   background: #ffcc00;
   width: 20vw;
-  height: 6vh;
+  height: 10vh;
   z-index: 999;
   top: 0%;
   transform: translateY(0);
 }
 
-.navBar .navBox h1 {
+.h1Box h1 {
   width: 80%;
   font-size: 1rem;
   font-weight: 600;
@@ -76,6 +75,58 @@ a {
   margin-left: 10%;
   margin: 0;
   padding: 0;
+}
+
+.sewolQuiz {
+  width: 20vw;
+  height: 8vh;
+  font-weight: 600;
+  color: #999999;
+  background: #f1f1f5;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sewolQuiz:focus{
+  background-color: #ffcc00;
+  border: none;
+  outline: none;
+  filter: opacity(80%);
+}
+
+.safeQuiz{
+  width: 20vw;
+  height: 8vh;
+  font-weight: 600;
+  color: #999999;
+  background: #f1f1f5;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.safeQuiz:focus{
+  background-color: #ffcc00;
+  border: none;
+  outline: none;
+  filter: opacity(80%);
 }
 
 .navBar .navBox ul {
@@ -94,12 +145,12 @@ a {
   font-weight: 600;
   color: #999999;
   background: none;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .navBar .navBox ul .Btn:focus {
