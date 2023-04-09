@@ -7,10 +7,8 @@ import Song1 from "../components/video/Song1";
 import Song2 from "../components/video/Song2";
 import SewolQuiz1 from "../components/quiz/sewol/SewolQuiz1";
 import SafeQuiz1 from "../components/quiz/safe/SafeQuiz1";
-import SafeQuiz2 from "../components/quiz/safe/SafeQuiz2";
-import SafeQuiz3 from "../components/quiz/safe/SafeQuiz3";
-import SafeQuiz4 from "../components/quiz/safe/SafeQuiz4";
-import SafeQuiz5 from "../components/quiz/safe/SafeQuiz5";
+
+
 import { useEffect } from "react";
 import { useRef } from "react";
 
@@ -67,7 +65,6 @@ const Home = () => {
 
   const selectQuiz2 = {
     one: <SafeQuiz1 />,
-    two: <SafeQuiz2 />,
   };
 
   useEffect(() => {

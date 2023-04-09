@@ -19,8 +19,8 @@ const SafeQuiz5 = () => {
       <div>
         <div className="quizBox">
           <div className="quizInBox">
-            <h1>문제</h1>
-            <p className="quiz">
+            <h1>문제5</h1>
+            <p className="quiz1">
               배가 기울어질때 선장이나 선원의 안내로 방 안에 그대로
               머물러있는다.
             </p>
