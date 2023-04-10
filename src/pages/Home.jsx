@@ -84,7 +84,7 @@ const Home = () => {
       </a>
       <div className="navBox">
         <div className="h1Box">
-          <h1>세월호 추모영상(1시간 창체)</h1>
+          <h1>세월호 참사를 기억하며</h1>
         </div>
         <ul>
           {sewolList.map((data) => (
@@ -117,8 +117,10 @@ const Home = () => {
       className="page416"
         href="https://416foundation.org/?gclid=CjwKCAjw586hBhBrEiwAQYEnHUGWzL1Lfk2ae9yISYIAqXImKnOV9EHnF-oJ8mCgn5W2M_QoAS-yUhoCvAAQAvD_BwE"
         target="_blank"
+        style={{textDecoration: "none"}}
       >
-        더 알아보고 싶다면?
+        더 알아보고 싶다면?<br />
+        (4.16재단)
       </a>
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
