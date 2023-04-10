@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useState } from "react";
 import Logo from "../img/sewolLogo.png";
-import {Link} from "react-router-dom";
 import "../styles/main.css";
+import Sewol from "./Sewol";
 
 function Main() {
-    return (
-        <div className='main'>
-            <img src={Logo} alt="세월호 로고" />
-            <Link to="/sewol">
-                <button>
-                    세월호 알아보러가기
-                </button>
-            </Link>
+  const [changeMain, setChangeMain] = useState(true);
+
+  const handleClick = () => {
+    setChangeMain(false);
+  };
+  return (
+    <div>
+      {changeMain ? (
+        <div className="main">
+          <img src={Logo} alt="세월호 로고" />
+          <button onClick={handleClick}>세월호 알아보러가기</button>
         </div>
-    );
+      ) : (
+        <Sewol />
+      )}
+    </div>
+  );
 }
 
 export default Main;
