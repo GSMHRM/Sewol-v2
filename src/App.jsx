@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import './App.css';
+import Intro from "./pages/Intro";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Intro />} />
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </div>

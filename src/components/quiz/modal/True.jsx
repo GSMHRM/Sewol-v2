@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FiX } from "react-icons/fi";
 import "../../../styles/quiz.css";
 
-const True = ({ text, commentary, setTrueOpen }) => {
+const True = ({ text, commentary, setTrueOpen, seeCommentary }) => {
   const trueModal = () => {
     setTrueOpen(false);
   };
@@ -39,7 +39,7 @@ const True = ({ text, commentary, setTrueOpen }) => {
     <div ref={modalRef} className="modalBox">
       <div className="modalBoxInner">
         <p className="text">{text}</p>
-        <button className="commentaryOpen" onClick={handleClick}>해설보기</button>
+        <button className="commentaryOpen" onClick={handleClick}>{seeCommentary}</button>
         <FiX className="closeModal" onClick={trueModal} />
       </div>
       {isOpen && (<div className="commentary">{commentary}</div>)}

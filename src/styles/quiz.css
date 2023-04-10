@@ -34,7 +34,15 @@
   top: 20%;
   text-align: center;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.quiz2{
+  top: 20%;
+  text-align: center;
+  width: 100%;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -63,7 +71,7 @@
 }
 
 .quizlist3 {
-  margin-top: 12%;
+  margin-top: 8%;
   margin-left: 6%;
   font-size: 1.2rem;
   font-weight: 600;
@@ -82,7 +90,7 @@
 }
 
 .quizlist3 p {
-  margin-top: 6%;
+  margin-top: 4%;
   transition: all 0.3s ease-out;
 }
 
@@ -111,7 +119,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 6%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -155,6 +163,7 @@
 
 .quizContent{
   width: 100%;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-top: 10%;
 }
@@ -259,14 +268,15 @@
 }
 
 .commentary{
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
   font-weight: 600;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  padding: 10px;
 }
 
 .closeModal {

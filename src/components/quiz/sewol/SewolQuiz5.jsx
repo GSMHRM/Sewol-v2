@@ -27,8 +27,8 @@ const SewolQuiz5 = () => {
         <div>
           <div className="quizBox">
             <div className="quizInBox">
-              <h1>문제5</h1>
-              <p className="quiz1">세월호 참사 이후 대한민국 정부가 시행한 것은 무엇인가</p>
+              <h1>문제 5</h1>
+              <p className="quiz2">세월호 참사 이후 대한민국 정부가 시행한 것은 무엇인가</p>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizlist3">
                 <p onClick={falseModal}>1. 유엔인권이행위원회 조사 요청 수용</p>
@@ -41,22 +41,23 @@ const SewolQuiz5 = () => {
               {"<"} 이전 문제
             </button>
           </div>
-          {trueOpen && (
-            <True
-              text="정답입니다!"
-              commentary="정부는 해상안전법을 개정하였다."
-              setTrueOpen={setTrueOpen}
-            />
-          )}
-          {falseOpen && (
-            <False
-              text="오답입니다!"
-              again='다시 풀어보세요'
-              commentary="정부는 해상안전법을 개정하였다."
-              setFalseOpen={setFalseOpen}
-            />
-          )}
-        </div>
+      {trueOpen && (
+        <True
+          text="정답입니다!"
+          seeCommentary=""
+          commentary=""
+          setTrueOpen={setTrueOpen}
+        />
+      )}
+      {falseOpen && (
+        <False
+          text="오답입니다!"
+          again='다시 풀어보세요'
+          commentary="정부는 세월호 참사 이후 해상안전법을 개정하였다."
+          setFalseOpen={setFalseOpen}
+        />
+      )}
+      </div>
       ) : (<SewolQuiz4 />)}
     </div>
   );

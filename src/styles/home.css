@@ -5,8 +5,78 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
 }
+
+.GSMLogo{
+  position: absolute;
+  width: 18vw ;
+  height: auto;
+  left: 82%;
+  top: -3%;
+}
+
+.page416{
+  margin: 0;
+  position: relative;
+  top: 28%;
+  transform: translateX(-50%);
+  left: 50%;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page416 p{
+  margin-top: -4%;
+}
+
+.page416:hover{
+  color: #ffcc00;
+}
+
+.showVideo{
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+  text-decoration: underline;
+}
+
+.showVideo:hover{
+  color: #ffcc00;
+}
+
+.linkBox{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  width: 16vw;
+  height: 2vh;
+  top: 6%;
+  left: 36%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 0.2s ease forwards; /* 애니메이션 추가 */
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 .navBar::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */
@@ -32,14 +102,14 @@ a {
 
 .navBox {
   width: 20vw;
-  height: 36vh;
+  height: 50vh;
   background: #f1f1f5;
   padding: 0;
   margin: 0;
   position: relative;
   transform: translateX(-50%);
   left: 50%;
-  top: 4%;
+  top: 20%;
   border-radius: 10px;
   margin-bottom: 10%;
   overflow-x: hidden;
@@ -50,13 +120,47 @@ a {
   align-items: center;
 }
 
+.navBox1 {
+  width: 20vw;
+  height: 18vh;
+  background: #f1f1f5;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 10%;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1Box1 {
+  position: sticky;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ffcc11;
+  width: 20vw;
+  height: 6vh;
+  z-index: 999;
+  top: 0%;
+  transform: translateY(0);
+}
+
 .h1Box {
   position: sticky;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: #ffcc00;
+  background: #ffcc11;
   width: 20vw;
   height: 10vh;
   z-index: 999;
@@ -65,6 +169,19 @@ a {
 }
 
 .h1Box h1 {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 10%;
+  margin: 0;
+  padding: 0;
+}
+
+.h1Box1 h1 {
   width: 80%;
   font-size: 1rem;
   font-weight: 600;
@@ -88,7 +205,7 @@ a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 10%;
+  top: 14%;
   justify-content: center;
   align-items: center;
   border: none;
@@ -96,10 +213,23 @@ a {
   cursor: pointer;
 }
 
-.sewolQuiz:focus{
-  background-color: #ffcc00;
+.sewolActive {
+  width: 20vw;
+  height: 8vh;
+  font-weight: 600;
+  color: #999999;
+  background: #ffcc00;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14%;
+  justify-content: center;
+  align-items: center;
   border: none;
   outline: none;
+  cursor: pointer;
   filter: opacity(80%);
 }
 
@@ -114,19 +244,33 @@ a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 20%;
+  top: 0;
   justify-content: center;
   align-items: center;
   border: none;
   outline: none;
   cursor: pointer;
+  filter: opacity(80%);
 }
 
-.safeQuiz:focus{
-  background-color: #ffcc00;
+
+.safeActive{
+  width: 20vw;
+  height: 8vh;
+  font-weight: 600;
+  color: #999999;
+  background: #ffcc00;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 24%;
+  justify-content: center;
+  align-items: center;
   border: none;
   outline: none;
-  filter: opacity(80%);
+  cursor: pointer;
 }
 
 .navBar .navBox ul {
@@ -154,6 +298,37 @@ a {
 }
 
 .navBar .navBox ul .Btn:focus {
+  background-color: #ffcc00;
+  border: none;
+  outline: none;
+  filter: opacity(80%);
+}
+
+.navBox1 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navBox1 ul .Btn {
+  width: 20vw;
+  height: 6vh;
+  font-weight: 600;
+  color: #999999;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navBox1 ul .Btn:focus {
   background-color: #ffcc00;
   border: none;
   outline: none;

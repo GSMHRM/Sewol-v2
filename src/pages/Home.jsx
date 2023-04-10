@@ -7,64 +7,43 @@ import Song1 from "../components/video/Song1";
 import Song2 from "../components/video/Song2";
 import SewolQuiz1 from "../components/quiz/sewol/SewolQuiz1";
 import SafeQuiz1 from "../components/quiz/safe/SafeQuiz1";
-
+import GSM from "./../img/GSM.png";
 
 import { useEffect } from "react";
-import { useRef } from "react";
 
 const Home = () => {
   const sewolList = [
     { title: "세월호 영상", id: 1, name: "first" },
-    { title: "안전 교육 영상1", id: 2, name: "second" },
-    { title: "안전 교육 영상2", id: 3, name: "third" },
-    { title: "너를 보내고", id: 4, name: "fourth" },
-    { title: "천개의 바람이 되어", id: 5, name: "fifth" },
+    { title: "너를 보내고", id: 2, name: "second" },
+    { title: "천개의 바람이 되어", id: 3, name: "third" },
+    { title: "안전 교육 영상1", id: 4, name: "fourth" },
+    { title: "안전 교육 영상2", id: 5, name: "fifth" },
+    { title: "세월호 관련 퀴즈 풀어보기", id: 6, name: "six" },
+    { title: "안전 관련 퀴즈 풀어보기", id: 7, name: "seven" },
   ];
+
 
   const [contentSewol, setContentSewol] = useState();
 
   const [contentSewolQuiz, setContentSewolQuiz] = useState();
 
-  const [contentSafeQuiz, setContentSafeQuiz] = useState();
-
-  const btnRef = useRef(null);
-
   const handleClickButtonSewol = (e) => {
     const { name } = e.target;
     setContentSewol(name);
     setContentSewolQuiz(false);
-    setContentSafeQuiz(false);
-  };
-
-  const handleClickButtonSewolQuiz = (e) => {
-    const { name } = e.target;
-    setContentSewolQuiz(name);
-    setContentSewol(false); 
-    setContentSafeQuiz(false);
-  };
-
-  const handleClickButtonSafeQuiz = (e) => {
-    const { name } = e.target;
-    setContentSafeQuiz(name);
-    setContentSewol(false);
-    setContentSewolQuiz(false);
-    console.log(name);
+    setContentQuiz(false);
+    setSafeIsActive(false);
+    setSewolIsActive(false);
   };
 
   const selectSewol = {
     first: <SewolVideo />,
-    second: <SafeVideo1 />,
-    third: <SafeVideo2 />,
-    fourth: <Song1 />,
-    fifth: <Song2 />,
-  };
-
-  const selectQuiz1 = {
-    one: <SewolQuiz1 />,
-  };
-
-  const selectQuiz2 = {
-    one: <SafeQuiz1 />,
+    second: <Song1 />,
+    third: <Song2 />,
+    fourth: <SafeVideo2 />,
+    fifth: <SafeVideo1 />,
+    six:<SewolQuiz1/>,
+    seven:<SafeQuiz1 />
   };
 
   useEffect(() => {
@@ -73,9 +52,12 @@ const Home = () => {
 
   return (
     <div className="navBar">
+      <a href="http://gsm.gen.hs.kr/main/main.php" target="_blank">
+        <img className="GSMLogo" src={GSM} alt="GSMLOGO" />
+      </a>
       <div className="navBox">
         <div className="h1Box">
-          <h1>세월호 알아보기</h1>
+          <h1>세월호 참사를 기억하며</h1>
         </div>
         <ul>
           {sewolList.map((data) => (
@@ -84,19 +66,22 @@ const Home = () => {
               onClick={handleClickButtonSewol}
               name={data.name}
               key={data.id}
-              ref={btnRef}
             >
               {data.title}
             </button>
           ))}
         </ul>
       </div>
-      <button className="sewolQuiz" onClick={handleClickButtonSewolQuiz} name="one" ref={btnRef} >세월호 관련 퀴즈 풀어보기</button>
-      <button className="safeQuiz" onClick={handleClickButtonSafeQuiz} name="one" ref={btnRef}>안전 관련 퀴즈 풀어보기</button>
-
+      <a
+        className="page416"
+        href="https://416foundation.org/?gclid=CjwKCAjw586hBhBrEiwAQYEnHUGWzL1Lfk2ae9yISYIAqXImKnOV9EHnF-oJ8mCgn5W2M_QoAS-yUhoCvAAQAvD_BwE"
+        target="_blank"
+        style={{ textDecoration: "none" }}
+      >
+        <p>더 알아보고 싶다면?</p>
+        <p>(4.16재단)</p>
+      </a>
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
-      {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
-      {contentSafeQuiz && <div>{selectQuiz2[contentSafeQuiz]}</div>}
     </div>
   );
 };

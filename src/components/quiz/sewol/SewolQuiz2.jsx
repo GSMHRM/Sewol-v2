@@ -33,8 +33,8 @@ const SewolQuiz2 = () => {
         <div>
           <div className="quizBox">
             <div className="quizInBox">
-              <h1>문제2</h1>
-              <p className="quiz1">세월호의 희생자 수는 299명이다.</p>
+              <h1>문제 2</h1>
+              <p className="quiz2">세월호의 희생자 수는 299명이다.</p>
               <FiCircle className="circle" onClick={falseModal} />
               <FiX className="x" onClick={trueModal} />
             </div>
@@ -48,7 +48,8 @@ const SewolQuiz2 = () => {
           {trueOpen && (
             <True
               text="정답입니다!"
-              commentary="시신 미수습자 5명을 포함한 304명이 사망하였다."
+              seeCommentary=""
+              commentary=""
               setTrueOpen={setTrueOpen}
             />
           )}
