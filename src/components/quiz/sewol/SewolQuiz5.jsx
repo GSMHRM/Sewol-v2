@@ -44,8 +44,8 @@ const SewolQuiz5 = () => {
       {trueOpen && (
         <True
           text="정답입니다!"
-          seeCommentary="해설보기"
-          commentary="정부는 세월호 참사 이후 해상안전법을 개정하였다."
+          seeCommentary=""
+          commentary=""
           setTrueOpen={setTrueOpen}
         />
       )}

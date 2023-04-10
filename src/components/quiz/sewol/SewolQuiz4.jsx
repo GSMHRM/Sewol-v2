@@ -53,8 +53,8 @@ const SewolQuiz4 = () => {
           {trueOpen && (
             <True
               text="정답입니다!"
-              seeCommentary="해설보기"
-              commentary="2017년 3월23일 세월호는 1073일 만에 인양되었다."
+              seeCommentary=""
+              commentary=""
               setTrueOpen={setTrueOpen}
             />
           )}
