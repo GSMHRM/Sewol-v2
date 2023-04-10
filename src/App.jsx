@@ -1,13 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import './App.css';
+import Sewol from "./pages/Sewol";
+import Main from "./pages/Main";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/sewol" element={<Sewol />}/>
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </div>
