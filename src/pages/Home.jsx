@@ -26,7 +26,7 @@ const Home = () => {
 
   const [contentSafeQuiz, setContentSafeQuiz] = useState();
 
-  const btnRef = useRef(null);
+  const btnRef = useRef([]);
 
   const handleClickButtonSewol = (e) => {
     const { name } = e.target;
@@ -70,10 +70,6 @@ const Home = () => {
     setContentSewol("first");
   }, []);
 
-  useEffect(() =>{
-    btnRef.current.focus();
-  }, [])
-
   return (
     <div className="navBar">
       <a href="http://gsm.gen.hs.kr/main/main.php" target="_blank">
@@ -90,7 +86,6 @@ const Home = () => {
               onClick={handleClickButtonSewol}
               name={data.name}
               key={data.id}
-              ref={btnRef}
             >
               {data.title}
             </button>
@@ -101,6 +96,7 @@ const Home = () => {
         className="sewolQuiz"
         onClick={handleClickButtonSewolQuiz}
         name="one"
+        ref={btnRef}
       >
         세월호 관련 퀴즈 풀어보기
       </button>
@@ -108,6 +104,7 @@ const Home = () => {
         className="safeQuiz"
         onClick={handleClickButtonSafeQuiz}
         name="one"
+        ref={btnRef}
       >
         안전 관련 퀴즈 풀어보기
       </button>
