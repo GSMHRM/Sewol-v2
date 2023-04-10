@@ -7,7 +7,7 @@ import Song1 from "../components/video/Song1";
 import Song2 from "../components/video/Song2";
 import SewolQuiz1 from "../components/quiz/sewol/SewolQuiz1";
 import SafeQuiz1 from "../components/quiz/safe/SafeQuiz1";
-import GSM from "./img/GSM.png";
+import GSM from "./../img/GSM.png";
 
 import { useEffect } from "react";
 import { useRef } from "react";
