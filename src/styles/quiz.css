@@ -268,14 +268,15 @@
 }
 
 .commentary{
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
   font-weight: 600;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  padding: 10px;
 }
 
 .closeModal {
