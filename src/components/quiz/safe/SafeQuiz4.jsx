@@ -34,7 +34,7 @@ const SafeQuiz4 = () => {
             <div className="quizBox">
               <div className="quizInBox">
                 <h1>문제 4</h1>
-                <p className="quiz2">5개중 맞는 걸 고르시오</p>
+                <p className="quiz2">5개 중에서 맞는 것을 고르시오.</p>
                 <p className="explain">(답을 선택해주세요)</p>
                 <p className="quizlist11">
                   <p onClick={falseModal}>

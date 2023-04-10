@@ -36,9 +36,9 @@ const SewolQuiz = () => {
               </p>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizlist2">
-                <p onClick={falseModal}>1. 빨간리본</p>
-                <p onClick={trueModal}>2. 노란리본</p>
-                <p onClick={falseModal}>3. 파란리본</p>
+                <p onClick={falseModal}>1. 빨간 리본</p>
+                <p onClick={trueModal}>2. 노란 리본</p>
+                <p onClick={falseModal}>3. 파란 리본</p>
               </p>
             </div>
             <button className="nextQuiz" onClick={handleClick}>
