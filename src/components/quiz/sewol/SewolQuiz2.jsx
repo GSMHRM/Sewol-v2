@@ -48,6 +48,7 @@ const SewolQuiz2 = () => {
           {trueOpen && (
             <True
               text="정답입니다!"
+              seeCommentary="해설보기"
               commentary="시신 미수습자 5명을 포함한 304명이 사망하였다."
               setTrueOpen={setTrueOpen}
             />

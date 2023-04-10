@@ -53,8 +53,8 @@ const SafeQuiz3 = () => {
             {trueOpen && (
               <True
                 text="정답입니다!"
-                commentary="선박사고(화재, 테러 등) 발생시 큰소리로 외치거나 비상벨을 눌러
-          사고발생 사실을 알려야된다."
+                seeCommentary=""
+                commentary=""
                 setTrueOpen={setTrueOpen}
               />
             )}

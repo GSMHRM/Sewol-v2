@@ -52,6 +52,7 @@ const SewolQuiz3 = () => {
           {trueOpen && (
             <True
               text="정답입니다!"
+              seeCommentary="해설보기"
               commentary="정부는 세월호 침몰 신고가 접수된 가장 빠른 시간이 8시52분이라고 공식적으로 밝혔다."
               setTrueOpen={setTrueOpen}
             />

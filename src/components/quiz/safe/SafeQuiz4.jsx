@@ -70,8 +70,8 @@ const SafeQuiz4 = () => {
             {trueOpen && (
               <True
                 text="정답입니다!"
-                commentary="상황이 위험해졌을 때 의자 밑 또는 선실 내 보관된 구명조끼를
-          입고, 물속에서 행동이 쉽도록 가능한 한 신발을 벗는어야된다."
+                seeCommentary=""
+                commentary=""
                 setTrueOpen={setTrueOpen}
               />
             )}

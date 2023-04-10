@@ -47,7 +47,8 @@ const SafeQuiz5 = () => {
           {trueOpen && (
             <True
               text="정답입니다!"
-              commentary="이안류는 해안에서 바다로 흐르는 해류를 말합니다. 이안류는 보통 수십 미터에서 수백 미터까지 이어지며 유속은 최대 10km/h에 이르기도 합니다. 일반인의 수영 속도보다 훨씬 빠르기 때문에 절대로 이안류를 거슬러 헤엄쳐서 돌아오려고 하면 안 됩니다."
+              seeCommentary=""
+              commentary=""
               setTrueOpen={setTrueOpen}
             />
           )}

@@ -42,6 +42,7 @@ const SafeQuiz1 = () => {
           {trueOpen && (
             <True
               text="정답입니다!"
+              seeCommentary="해설보기"
               commentary="이명박 정부는 선박업계의 요구에 따라 선박연령을 20년에서 30년으로 완화했다."
               setTrueOpen={setTrueOpen}
             />
