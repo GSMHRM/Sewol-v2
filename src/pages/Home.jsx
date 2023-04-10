@@ -28,7 +28,6 @@ const Home = () => {
 
   const [sewolIsActive, setSewolIsActive] = useState(false);
   const [safeIsActive, setSafeIsActive] = useState(false);
-  const btnRef = useRef([]);
 
   const handleClickButtonSewol = (e) => {
     const { name } = e.target;
@@ -104,7 +103,6 @@ const Home = () => {
         className={sewolIsActive ? "sewolActive" : "sewolQuiz"}
         onClick={handleClickButtonSewolQuiz}
         name="one"
-        ref={btnRef}
       >
         세월호 관련 퀴즈 풀어보기
       </button>
@@ -112,7 +110,6 @@ const Home = () => {
         className={safeIsActive ? "safeActive" : "safeQuiz"}
         onClick={handleClickButtonSafeQuiz}
         name="one"
-        ref={btnRef}
       >
         안전 관련 퀴즈 풀어보기
       </button>

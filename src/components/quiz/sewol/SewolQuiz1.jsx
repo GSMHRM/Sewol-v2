@@ -57,7 +57,7 @@ const SewolQuiz = () => {
             <True
               text="정답입니다!"
               seeCommentary=""
-              commentary="없음"
+              commentary=""
               setTrueOpen={setTrueOpen}
             />
           )}
