@@ -32,7 +32,7 @@ const SafeQuiz2 = () => {
         <div>
           <div className="quizBox">
             <div className="quizInBox">
-              <h1>문제2</h1>
+              <h1>문제 2</h1>
               <p className="quiz1">
                 해수면 또는 내수면에서 선박 등의
                 침몰·좌초·전복·충돌·화재·기관고장 및 추락 등으로 인하여 사람의

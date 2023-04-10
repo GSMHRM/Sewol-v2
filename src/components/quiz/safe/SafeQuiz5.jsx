@@ -26,7 +26,7 @@ const SafeQuiz5 = () => {
         <div>
           <div className="quizBox">
             <div className="quizInBox">
-              <h1>문제5</h1>
+              <h1>문제 5</h1>
               <p className="quiz2">다음은 무엇을 설명한 것일까요?</p>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizContent">

@@ -35,7 +35,7 @@ const SafeQuiz3 = () => {
           <div>
             <div className="quizBox">
               <div className="quizInBox">
-                <h1>문제3</h1>
+                <h1>문제 3</h1>
                 <p className="quiz1">
                   선박사고(화재, 테러 등) 발생시 큰소리로 외치거나 비상벨을 눌러
                   사고발생 사실을 알린다.

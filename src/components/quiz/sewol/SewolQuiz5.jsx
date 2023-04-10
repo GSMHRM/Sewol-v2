@@ -27,7 +27,7 @@ const SewolQuiz5 = () => {
         <div>
           <div className="quizBox">
             <div className="quizInBox">
-              <h1>문제5</h1>
+              <h1>문제 5</h1>
               <p className="quiz2">세월호 참사 이후 대한민국 정부가 시행한 것은 무엇인가</p>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizlist3">
