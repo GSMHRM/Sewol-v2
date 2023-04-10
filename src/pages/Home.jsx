@@ -77,7 +77,7 @@ const Home = () => {
       </a>
       <div className="navBox">
         <div className="h1Box">
-          <h1>세월호 알아보기</h1>
+          <h1>세월호 추모영상(1시간 창체)</h1>
         </div>
         <ul>
           {sewolList.map((data) => (

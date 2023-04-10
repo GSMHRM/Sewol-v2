@@ -35,6 +35,7 @@
 
 .intro img {
     position: absolute;
+    width: 40vw;
     top: 80%;
     left: 50%;
     transform: translateX(-50%);
