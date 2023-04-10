@@ -20,13 +20,17 @@ a {
   position: relative;
   top: 30%;
   transform: translateX(-50%);
-  left: 30%;
+  left: 50%;
   color: black;
   font-weight: 600;
   transition: all 0.3s ease-out;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.page416 p{
+  margin-top: -4%;
 }
 
 .page416:hover{

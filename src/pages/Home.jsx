@@ -119,8 +119,8 @@ const Home = () => {
         target="_blank"
         style={{textDecoration: "none"}}
       >
-        더 알아보고 싶다면?<br />
-        (4.16재단)
+        <p>더 알아보고 싶다면?</p>
+        <p>(4.16재단)</p>
       </a>
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
