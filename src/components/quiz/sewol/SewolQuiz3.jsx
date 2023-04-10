@@ -33,13 +33,13 @@ const SewolQuiz3 = () => {
         <div>
           <div className="quizBox">
             <div className="quizInBox">
-              <h1>문제3</h1>
-              <p className="quiz2">세월호 최초 신고 시간은 언제인가요</p>
+              <h1>문제 3</h1>
+              <p className="quiz2">전쟁터에 있는 사람들의 무사귀환을 바라는 뜻으로 나무에 매달아 두었던 것은?</p>
               <p className="explain">(답을 선택해주세요)</p>
-              <p className="quizlist">
-                <p onClick={falseModal}>1. 8시 44분</p>
-                <p onClick={trueModal}>2. 8시 52분</p>
-                <p onClick={falseModal}>3. 9시 01분</p>
+              <p className="quizlist2">
+                <p onClick={falseModal}>1. 빨간리본</p>
+                <p onClick={trueModal}>2. 노란리본</p>
+                <p onClick={falseModal}>3. 파란리본</p>
               </p>
             </div>
             <button className="nextQuiz" onClick={handleClick}>
@@ -61,7 +61,7 @@ const SewolQuiz3 = () => {
             <False
               text="오답입니다!"
               again="다시 풀어보세요"
-              commentary="정부는 세월호 침몰 신고가 접수된 가장 빠른 시간이 8시52분이라고 공식적으로 밝혔다."
+              commentary="전쟁터에 있는 사람들의 무사귀환을 바라는 뜻으로 나무에 매달아 두었던 것은 노란리본입니다."
               setFalseOpen={setFalseOpen}
             />
           )}

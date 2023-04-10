@@ -14,10 +14,10 @@ import { useEffect } from "react";
 const Home = () => {
   const sewolList = [
     { title: "세월호 영상", id: 1, name: "first" },
-    { title: "너를 보내고", id: 2, name: "fourth" },
-    { title: "천개의 바람이 되어", id: 3, name: "fifth" },
-    { title: "안전 교육 영상1", id: 4, name: "second" },
-    { title: "안전 교육 영상2", id: 5, name: "third" },
+    { title: "너를 보내고", id: 2, name: "second" },
+    { title: "천개의 바람이 되어", id: 3, name: "third" },
+    { title: "안전 교육 영상1", id: 4, name: "fourth" },
+    { title: "안전 교육 영상2", id: 5, name: "fifth" },
   ];
 
   const [contentSewol, setContentSewol] = useState();
@@ -59,10 +59,10 @@ const Home = () => {
 
   const selectSewol = {
     first: <SewolVideo />,
-    second: <SafeVideo1 />,
-    third: <SafeVideo2 />,
-    fourth: <Song1 />,
-    fifth: <Song2 />,
+    second: <Song1 />,
+    third: <Song2 />,
+    fourth: <SafeVideo1 />,
+    fifth: <SafeVideo2 />,
   };
 
   const selectQuiz1 = {

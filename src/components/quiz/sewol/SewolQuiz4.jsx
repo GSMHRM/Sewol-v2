@@ -35,12 +35,12 @@ const SewolQuiz4 = () => {
           <div className="quizBox">
             <div className="quizInBox">
               <h1>문제 4</h1>
-              <div className="quiz2">세월호의 인양일은 언제인가요?</div>
+              <div className="quiz2">세월호 참사 당시 세월호에 탔던 이들의 구조를 기다리며 피해자 가족들이 머물렀던 곳은?</div>
               <p className="explain">(답을 선택해주세요)</p>
-              <p className="quizlist">
-                <p onClick={falseModal}>1. 2015년 3월 23일</p>
-                <p onClick={falseModal}>2. 2016년 3월 23일</p>
-                <p onClick={trueModal}>3, 2017년 3월 23일</p>
+              <p className="quizlist2">
+                <p onClick={trueModal}>1. 팽목항</p>
+                <p onClick={falseModal}>2. 진도항</p>
+                <p onClick={falseModal}>3, 서망항</p>
               </p>
             </div>
             <button className="nextQuiz" onClick={handleClick}>
@@ -62,7 +62,7 @@ const SewolQuiz4 = () => {
             <False
               text="오답입니다!"
               again="다시 풀어보세요"
-              commentary="2017년 3월23일 세월호는 1073일 만에 인양되었다."
+              commentary="세월호 참사 당시 세월호에 탔던 이들의 구조를 기다리며 피해자 가족들이 머물렀던 곳은 팽목항입니다."
               setFalseOpen={setFalseOpen}
             />
           )}
