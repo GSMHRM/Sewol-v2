@@ -15,6 +15,22 @@ a {
   top: -3%;
 }
 
+.page416{
+  margin: 0;
+  position: relative;
+  top: 30%;
+  transform: translateX(-50%);
+  left: 30%;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+  text-decoration: underline;
+}
+
+.page416:hover{
+  color: #ffcc00;
+}
+
 .showVideo{
   color: black;
   font-weight: 600;

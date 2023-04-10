@@ -8,18 +8,16 @@ import Song2 from "../components/video/Song2";
 import SewolQuiz1 from "../components/quiz/sewol/SewolQuiz1";
 import SafeQuiz1 from "../components/quiz/safe/SafeQuiz1";
 import GSM from "./../img/GSM.png";
-
 import { useEffect } from "react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const sewolList = [
     { title: "세월호 영상", id: 1, name: "first" },
-    { title: "안전 교육 영상1", id: 2, name: "second" },
-    { title: "안전 교육 영상2", id: 3, name: "third" },
-    { title: "너를 보내고", id: 4, name: "fourth" },
-    { title: "천개의 바람이 되어", id: 5, name: "fifth" },
+    { title: "천개의 바람이 되어", id: 2, name: "second" },
+    { title: "너를 보내고", id: 3, name: "third" },
+    { title: "안전 교육 영상1", id: 4, name: "fourth" },
+    { title: "안전 교육 영상2", id: 5, name: "fifth" },
   ];
 
   const [contentSewol, setContentSewol] = useState();
@@ -54,10 +52,10 @@ const Home = () => {
 
   const selectSewol = {
     first: <SewolVideo />,
-    second: <SafeVideo1 />,
-    third: <SafeVideo2 />,
-    fourth: <Song1 />,
-    fifth: <Song2 />,
+    second: <Song2 />,
+    third: <Song1 />,
+    fourth: <SafeVideo1 />,
+    fifth: <SafeVideo2 />,
   };
 
   const selectQuiz1 = {
@@ -71,6 +69,10 @@ const Home = () => {
   useEffect(() => {
     setContentSewol("first");
   }, []);
+
+  useEffect(() =>{
+    btnRef.current.focus();
+  }, [])
 
   return (
     <div className="navBar">
@@ -99,7 +101,6 @@ const Home = () => {
         className="sewolQuiz"
         onClick={handleClickButtonSewolQuiz}
         name="one"
-        ref={btnRef}
       >
         세월호 관련 퀴즈 풀어보기
       </button>
@@ -107,10 +108,16 @@ const Home = () => {
         className="safeQuiz"
         onClick={handleClickButtonSafeQuiz}
         name="one"
-        ref={btnRef}
       >
         안전 관련 퀴즈 풀어보기
       </button>
+      <a
+      className="page416"
+        href="https://416foundation.org/?gclid=CjwKCAjw586hBhBrEiwAQYEnHUGWzL1Lfk2ae9yISYIAqXImKnOV9EHnF-oJ8mCgn5W2M_QoAS-yUhoCvAAQAvD_BwE"
+        target="_blank"
+      >
+        더 알아보고 싶다면?
+      </a>
 
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
