@@ -5,6 +5,7 @@
     transform: translateX(-50%);
     left: 64%;
     z-index: 9999;
+    width: 63%;
 }
 
 .icons{

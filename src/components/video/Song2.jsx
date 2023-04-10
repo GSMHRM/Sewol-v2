@@ -8,7 +8,6 @@ const Song2 = () => {
       <Icons url={URL} />
       <iframe
         className="video"
-        width="960"
         height="515"
         src="https://www.youtube.com/embed/-iEv-rxGrzs"
         title="YouTube video player"

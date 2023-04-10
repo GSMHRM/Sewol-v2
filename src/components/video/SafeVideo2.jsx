@@ -9,7 +9,6 @@ const SafeVideo2 = () => {
       <Icons url={URL}/>
       <iframe
       className="video"
-        width="960"
         height="515"
         src="https://www.youtube.com/embed/N9wSzbWX-Wg"
         title="YouTube video player"

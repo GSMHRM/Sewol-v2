@@ -8,7 +8,6 @@ const SewolVideo = () => {
       <Icons url={URL} />
       <iframe
         className="video"
-        width="960"
         height="515"
         src="https://www.youtube.com/embed/ALvTNrE_LbU"
         title="YouTube video player"
