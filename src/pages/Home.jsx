@@ -113,7 +113,13 @@ const Home = () => {
       >
         안전 관련 퀴즈 풀어보기
       </button>
-
+      <a
+      className="page416"
+        href="https://416foundation.org/?gclid=CjwKCAjw586hBhBrEiwAQYEnHUGWzL1Lfk2ae9yISYIAqXImKnOV9EHnF-oJ8mCgn5W2M_QoAS-yUhoCvAAQAvD_BwE"
+        target="_blank"
+      >
+        더 알아보고 싶다면?
+      </a>
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
       {contentSafeQuiz && <div>{selectQuiz2[contentSafeQuiz]}</div>}
