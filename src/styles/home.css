@@ -7,10 +7,18 @@ a {
   text-decoration: none;
 }
 
+.GSMLogo{
+  position: absolute;
+  width: 10vw ;
+  height: auto;
+  left: 88%;
+}
+
 .showVideo{
   color: black;
   font-weight: 600;
   transition: all 0.3s ease-out;
+  text-decoration: underline;
 }
 
 .showVideo:hover{
@@ -78,7 +86,7 @@ a {
   position: relative;
   transform: translateX(-50%);
   left: 50%;
-  top: 4%;
+  top: 10%;
   border-radius: 10px;
   margin-bottom: 10%;
   overflow-x: hidden;
@@ -127,7 +135,7 @@ a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 10%;
+  top: 14%;
   justify-content: center;
   align-items: center;
   border: none;
@@ -153,7 +161,7 @@ a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 20%;
+  top: 24%;
   justify-content: center;
   align-items: center;
   border: none;

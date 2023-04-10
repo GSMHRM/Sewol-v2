@@ -7,10 +7,11 @@ import Song1 from "../components/video/Song1";
 import Song2 from "../components/video/Song2";
 import SewolQuiz1 from "../components/quiz/sewol/SewolQuiz1";
 import SafeQuiz1 from "../components/quiz/safe/SafeQuiz1";
-
+import GSM from "./img/GSM.png";
 
 import { useEffect } from "react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const sewolList = [
@@ -39,7 +40,7 @@ const Home = () => {
   const handleClickButtonSewolQuiz = (e) => {
     const { name } = e.target;
     setContentSewolQuiz(name);
-    setContentSewol(false); 
+    setContentSewol(false);
     setContentSafeQuiz(false);
   };
 
@@ -73,6 +74,9 @@ const Home = () => {
 
   return (
     <div className="navBar">
+      <a href="http://gsm.gen.hs.kr/main/main.php" target="_blank">
+        <img className="GSMLogo" src={GSM} alt="GSMLOGO" />
+      </a>
       <div className="navBox">
         <div className="h1Box">
           <h1>세월호 알아보기</h1>
@@ -91,8 +95,22 @@ const Home = () => {
           ))}
         </ul>
       </div>
-      <button className="sewolQuiz" onClick={handleClickButtonSewolQuiz} name="one" ref={btnRef} >세월호 관련 퀴즈 풀어보기</button>
-      <button className="safeQuiz" onClick={handleClickButtonSafeQuiz} name="one" ref={btnRef}>안전 관련 퀴즈 풀어보기</button>
+      <button
+        className="sewolQuiz"
+        onClick={handleClickButtonSewolQuiz}
+        name="one"
+        ref={btnRef}
+      >
+        세월호 관련 퀴즈 풀어보기
+      </button>
+      <button
+        className="safeQuiz"
+        onClick={handleClickButtonSafeQuiz}
+        name="one"
+        ref={btnRef}
+      >
+        안전 관련 퀴즈 풀어보기
+      </button>
 
       {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       {contentSewolQuiz && <div>{selectQuiz1[contentSewolQuiz]}</div>}
