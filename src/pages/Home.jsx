@@ -10,6 +10,7 @@ import SafeQuiz1 from "../components/quiz/safe/SafeQuiz1";
 import GSM from "./../img/GSM.png";
 
 import { useEffect } from "react";
+import Think from "../components/quiz/sewol/Think";
 
 const Home = () => {
   const sewolList = [
@@ -20,8 +21,8 @@ const Home = () => {
     { title: "안전 교육 영상2", id: 5, name: "fifth" },
     { title: "세월호 관련 퀴즈 풀어보기", id: 6, name: "six" },
     { title: "안전 관련 퀴즈 풀어보기", id: 7, name: "seven" },
+    { title: "생각해봅시다", id: 8, name: "eight" },
   ];
-
 
   const [contentSewol, setContentSewol] = useState();
 
@@ -42,8 +43,9 @@ const Home = () => {
     third: <Song2 />,
     fourth: <SafeVideo2 />,
     fifth: <SafeVideo1 />,
-    six:<SewolQuiz1/>,
-    seven:<SafeQuiz1 />
+    six: <SewolQuiz1 />,
+    seven: <SafeQuiz1 />,
+    eight: <Think />,
   };
 
   useEffect(() => {
