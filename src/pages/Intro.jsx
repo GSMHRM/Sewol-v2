@@ -14,7 +14,7 @@ function Intro() {
     <div>
       {changeMain ? (
         <div className="intro">
-          {/* <FaRibbon className="sewolIcons"/> */}
+          <FaRibbon className="sewolIcons"/>
           <img src={Logo} alt="세월호 로고" className="sewolLogo" />
           <button onClick={handleClick}>세월호 알아보러가기</button>
         </div>
