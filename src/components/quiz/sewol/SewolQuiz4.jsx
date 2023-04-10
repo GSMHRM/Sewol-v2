@@ -35,7 +35,7 @@ const SewolQuiz4 = () => {
           <div className="quizBox">
             <div className="quizInBox">
               <h1>문제 4</h1>
-              <div className="quiz1">세월호의 인양일은 언제인가요?</div>
+              <div className="quiz2">세월호의 인양일은 언제인가요?</div>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizlist">
                 <p onClick={falseModal}>1. 2015년 3월 23일</p>

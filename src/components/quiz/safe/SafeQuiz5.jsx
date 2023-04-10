@@ -27,7 +27,7 @@ const SafeQuiz5 = () => {
           <div className="quizBox">
             <div className="quizInBox">
               <h1>문제5</h1>
-              <p className="quiz1">다음은 무엇을 설명한 것일까요?</p>
+              <p className="quiz2">다음은 무엇을 설명한 것일까요?</p>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizContent">
                 배나 건물 등에서 침수로 인해 공기가 남아 있는 부분을 말합니다.

@@ -34,7 +34,7 @@ const SewolQuiz3 = () => {
           <div className="quizBox">
             <div className="quizInBox">
               <h1>문제3</h1>
-              <p className="quiz1">세월호 최초 신고 시간은 언제인가요</p>
+              <p className="quiz2">세월호 최초 신고 시간은 언제인가요</p>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizlist">
                 <p onClick={falseModal}>1. 8시 44분</p>

@@ -34,7 +34,7 @@ const SewolQuiz2 = () => {
           <div className="quizBox">
             <div className="quizInBox">
               <h1>문제2</h1>
-              <p className="quiz1">세월호의 희생자 수는 299명이다.</p>
+              <p className="quiz2">세월호의 희생자 수는 299명이다.</p>
               <FiCircle className="circle" onClick={falseModal} />
               <FiX className="x" onClick={trueModal} />
             </div>
