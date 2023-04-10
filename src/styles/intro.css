@@ -4,33 +4,26 @@
     background: linear-gradient(to bottom, #f8f5f5, #f4e3b4);
 }
 
+.intro .iconBox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .intro .sewolIcons {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 120px;
+    font-size: 5rem;
     color: #ffc00c;
-}
-
-.intro button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 210px;
-    height: 66px;
-    border-radius: 20px;
-    background-color: #ffc00c;
-    border: none;
+    transition: all 0.3s ease-out;
     cursor: pointer;
-    transition: all 0.2s ease-in;
-    font-weight: 600;
+    border: none;
+    outline: none;
+    background: none;
+
 }
 
-.intro button:hover {
-    background-color: #f8f5f5;
+.intro .sewolIcons:hover {
+    transform: scale(1.4);
 }
 
 .intro img {
