@@ -31,8 +31,8 @@ const SewolQuiz = () => {
             <div className="quizInBox">
               <h1>문제 1</h1>
               <p className="quiz2">
-                전쟁터에 있는 사람들의 무사귀환을 바라는 뜻으로 나무에 매달아
-                두었던 것은?
+                전쟁터에 있는 사람들의 무사귀환을 바라는 뜻으로<br />
+                나무에 매달아 두었던 것은?
               </p>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizlist2">
