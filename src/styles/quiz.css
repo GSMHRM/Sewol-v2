@@ -231,6 +231,8 @@
   padding: 20px;
   border: 10px solid #ffcc00;
   background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .text {

@@ -4,8 +4,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  z-index: -1;
-  /* background: url("../img//sewolBg.jpg"); */
+  background: linear-gradient(to bottom, #f8f5f5, #f4e3b4);
 }
 
 a {
@@ -45,6 +44,10 @@ a {
 
 .page416:hover{
   color: #ffcc00;
+}
+
+.underline416{
+  text-decoration: underline;
 }
 
 .showVideo{

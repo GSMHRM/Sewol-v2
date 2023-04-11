@@ -82,7 +82,7 @@ const Home = () => {
           style={{ textDecoration: "none" }}
         >
           <p>더 알아보고 싶다면?</p>
-          <p>(4.16재단)</p>
+          <p className="underline416">(4.16재단)</p>
         </a>
         {contentSewol && <div>{selectSewol[contentSewol]}</div>}
       </div>
