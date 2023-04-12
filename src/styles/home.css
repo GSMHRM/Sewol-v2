@@ -1,30 +1,29 @@
 body {
-  margin: 0;
-  object-fit: cover;
-  overflow: hidden;
   width: 100%;
   height: 100vh;
   background: linear-gradient(to bottom, #f8f5f5, #f4e3b4);
+  margin: 0;
+
 }
 
 a {
   text-decoration: none;
 }
 
-.topBox h1{
+.topBox h1 {
   margin: 0;
   cursor: pointer;
 }
 
-.GSMLogo{
+.GSMLogo {
   position: absolute;
-  width: 18vw ;
+  width: 18vw;
   height: auto;
   left: 82%;
   top: -3%;
 }
 
-.page416{
+.page416 {
   margin: 0;
   position: relative;
   top: 28%;
@@ -38,14 +37,13 @@ a {
   align-items: center;
 }
 
-.page416 p{
+.page416 p {
   margin-top: -4%;
 }
 
-.page416:hover{
+.page416:hover {
   color: #ffcc00;
 }
-
 .underline416{
   text-decoration: underline;
 }
@@ -57,11 +55,11 @@ a {
   text-decoration: underline;
 }
 
-.showVideo:hover{
+.showVideo:hover {
   color: #ffcc00;
 }
 
-.linkBox{
+.linkBox {
   position: absolute;
   background-color: #fff;
   border-radius: 10px;
@@ -75,7 +73,8 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
-  animation: slideInRight 0.2s ease forwards; /* 애니메이션 추가 */
+  animation: slideInRight 0.2s ease forwards;
+  /* 애니메이션 추가 */
 }
 
 @keyframes slideInRight {
@@ -83,6 +82,7 @@ a {
     transform: translateX(-10%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -92,16 +92,20 @@ a {
 
 
 .navBar::-webkit-scrollbar {
-  width: 8px; /* 스크롤바의 너비 */
+  width: 8px;
+  /* 스크롤바의 너비 */
 }
 
 .navBar::-webkit-scrollbar-thumb {
-  height: 30%; /* 스크롤바의 길이 */
-  background: #868f91; /* 스크롤바의 색상 */
+  height: 30%;
+  /* 스크롤바의 길이 */
+  background: #868f91;
+  /* 스크롤바의 색상 */
 }
 
 .navBar::-webkit-scrollbar-track {
-  background: rgba(62, 128, 220, 0.1); /*스크롤바 뒷 배경 색상*/
+  background: rgba(62, 128, 220, 0.1);
+  /*스크롤바 뒷 배경 색상*/
 }
 
 .navBar {
@@ -206,84 +210,6 @@ a {
   padding: 0;
 }
 
-.sewolQuiz {
-  width: 20vw;
-  height: 8vh;
-  font-weight: 600;
-  color: #999999;
-  background: #f1f1f5;
-  border-radius: 10px;
-  display: flex;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 14%;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.sewolActive {
-  width: 20vw;
-  height: 8vh;
-  font-weight: 600;
-  color: #999999;
-  background: #ffcc00;
-  border-radius: 10px;
-  display: flex;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 14%;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  filter: opacity(80%);
-}
-
-.safeQuiz{
-  width: 20vw;
-  height: 8vh;
-  font-weight: 600;
-  color: #999999;
-  background: #f1f1f5;
-  border-radius: 10px;
-  display: flex;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  filter: opacity(80%);
-}
-
-.safeActive{
-  width: 20vw;
-  height: 8vh;
-  font-weight: 600;
-  color: #999999;
-  background: #ffcc00;
-  border-radius: 10px;
-  display: flex;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 24%;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .navBar .navBox ul {
   display: flex;
   flex-direction: column;
@@ -314,33 +240,6 @@ a {
   outline: none;
 }
 
-.navBox1 ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navBox1 ul .Btn {
-  width: 20vw;
-  height: 6vh;
-  font-weight: 600;
-  color: #999999;
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.navBox1 ul .Btn:focus {
+.navBar .navBox ul .Btn:active {
   background-color: #ffcc00;
-  border: none;
-  outline: none;
-  filter: opacity(80%);
 }
