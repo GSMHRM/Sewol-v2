@@ -234,12 +234,13 @@ a {
   cursor: pointer;
 }
 
-.navBar .navBox ul .Btn:active {
-  background-color: #ffcc00;
-  border: none;
-  outline: none;
+.navBar .navBox ul .Btn:hover {
+  color: #757474;
+  font-weight: 900;
 }
 
 .navBar .navBox ul .Btn:active {
   background-color: #ffcc00;
+  border: none;
+  outline: none;
 }
