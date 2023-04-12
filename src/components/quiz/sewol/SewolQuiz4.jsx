@@ -35,7 +35,7 @@ const SewolQuiz4 = () => {
           <div className="quizBox">
             <div className="quizInBox">
               <h1>문제 4</h1>
-              <div className="quiz2">세월호 참사 당시 세월호에 탔던 이들의 구조를 기다리며 피해자 가족들이 머물렀던 곳은?</div>
+              <div className="quiz2">세월호 참사 당시 세월호에 탔던 이들의 구조를 기다리며<br/> 피해자 가족들이 머물렀던 장소는?</div>
               <p className="explain">(답을 선택해주세요)</p>
               <p className="quizlist2">
                 <p onClick={trueModal}>1. 팽목항</p>

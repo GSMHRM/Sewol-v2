@@ -3,6 +3,7 @@ body {
   height: 100vh;
   background: linear-gradient(to bottom, #f8f5f5, #f4e3b4);
   margin: 0;
+
 }
 
 a {
@@ -43,8 +44,11 @@ a {
 .page416:hover {
   color: #ffcc00;
 }
+.underline416{
+  text-decoration: underline;
+}
 
-.showVideo {
+.showVideo{
   color: black;
   font-weight: 600;
   transition: all 0.3s ease-out;
@@ -230,9 +234,8 @@ a {
   cursor: pointer;
 }
 
-.navBar .navBox ul .Btn:hover {
-  color: #7a7777;
-  font-weight: 900;
+.navBar .navBox ul .Btn:active {
+  background-color: #ffcc00;
   border: none;
   outline: none;
 }
