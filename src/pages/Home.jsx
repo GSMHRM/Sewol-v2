@@ -25,16 +25,11 @@ const Home = () => {
   ];
 
   const [contentSewol, setContentSewol] = useState();
-
-  const [contentSewolQuiz, setContentSewolQuiz] = useState();
-
+  
   const handleClickButtonSewol = (e) => {
     const { name } = e.target;
     setContentSewol(name);
-    setContentSewolQuiz(false);
     setContentQuiz(false);
-    setSafeIsActive(false);
-    setSewolIsActive(false);
   };
 
   const selectSewol = {
